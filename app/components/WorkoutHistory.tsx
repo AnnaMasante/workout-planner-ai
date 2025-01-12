@@ -20,7 +20,6 @@ export default function WorkoutHistory({ workouts }: WorkoutHistoryProps) {
       <h2 className="text-2xl font-bold mb-4">Historique des Programmes</h2>
       <div className="space-y-4">
         {workouts.map((workout, index) => {
-          console.log(workout); // Ajout du console.log pour inspecter `workout`
           return (
             <Card key={index}>
               <CardHeader>

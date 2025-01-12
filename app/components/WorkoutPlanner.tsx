@@ -41,7 +41,6 @@ export default function WorkoutPlanner() {
   });
 
   useEffect(() => {
-    console.log("completionHook: " + completionHook); // Ajout du console.log pour inspecter `completionHook`
     if (completionHook) {
       workouts[workouts.length - 1].plan = completion;
     }
