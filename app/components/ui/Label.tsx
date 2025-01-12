@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from "react";
+import React from "react";
 
 interface LabelProps {
   htmlFor: string;

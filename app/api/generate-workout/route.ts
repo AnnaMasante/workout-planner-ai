@@ -1,10 +1,6 @@
 import { createAnthropic } from "@ai-sdk/anthropic";
-import { generateText, streamText } from "ai";
+import { streamText } from "ai";
 import { NextResponse } from "next/server";
-
-/*const anthropic = new Anthropic({
-  apiKey: process.env["ANTHROPIC_API_KEY"],
-});*/
 
 const anthropic = createAnthropic({
   apiKey: process.env["ANTHROPIC_API_KEY"],

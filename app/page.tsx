@@ -1,4 +1,6 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities */
+
 import WorkoutPlanner from "./components/WorkoutPlanner";
 
 export default function Home() {

@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 
 import { useEffect, useState } from "react";
 import { useCompletion } from "ai/react";
@@ -44,7 +45,7 @@ export default function WorkoutPlanner() {
     if (completionHook) {
       workouts[workouts.length - 1].plan = completion;
     }
-  }, [completionHook]);
+  }, [completionHook, workouts, completion]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
