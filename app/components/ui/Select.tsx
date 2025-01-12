@@ -18,11 +18,10 @@ const Select: React.FC<SelectProps> = ({ options, label, onChange }) => {
 
   return (
     <div className="flex flex-col">
-      <label className="mb-2 font-semibold">{label}</label>
       <select
         value={selectedOption}
         onChange={handleChange}
-        className="p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600"
+        className="p-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
       >
         <option value="" disabled>
           {label}
