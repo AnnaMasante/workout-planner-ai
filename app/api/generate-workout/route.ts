@@ -16,7 +16,8 @@ export async function POST(req: Request) {
     
       return result.toTextStreamResponse();
 
-  } catch (error) {
+  } catch  {
+    
     return NextResponse.json(
       { success: false, error: "Failed to generate workout. Please try again." },
       { status: 500 }
